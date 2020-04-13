@@ -1,0 +1,1 @@
+INSERT INTO SHOP_IW ( SHOP_NAME ) VALUES ( "Tesco" )

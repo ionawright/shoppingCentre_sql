@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 12, 2020 at 06:47 PM
+-- Generation Time: Apr 11, 2020 at 03:51 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.28
 
@@ -19,39 +19,56 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `SHOPPINGCENTRE`
+-- Database: `SHOPPING_CENTRE_IW`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Shop`
+-- Table structure for table `SHOP_IW`
 --
 
-CREATE TABLE `Shop` (
-  `ShopNo` int(11) NOT NULL,
-  `ShopName` varchar(255) NOT NULL
+CREATE TABLE `SHOP_IW` (
+  `SHOP_NO` int(11) NOT NULL,
+  `SHOP_NAME` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `SHOP_IW`
+--
+
+INSERT INTO `SHOP_IW` (`SHOP_NO`, `SHOP_NAME`) VALUES
+(1, 'Boots'),
+(2, 'Zara'),
+(3, 'TopShop'),
+(4, 'Nandos'),
+(5, 'FiveGuys'),
+(6, 'PC World'),
+(7, 'Disney'),
+(8, 'Cineworld'),
+(9, 'PizzaHut'),
+(10, 'H&M'),
+(11, 'HMV');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `Shop`
+-- Indexes for table `SHOP_IW`
 --
-ALTER TABLE `Shop`
-  ADD PRIMARY KEY (`ShopNo`);
+ALTER TABLE `SHOP_IW`
+  ADD PRIMARY KEY (`SHOP_NO`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `Shop`
+-- AUTO_INCREMENT for table `SHOP_IW`
 --
-ALTER TABLE `Shop`
-  MODIFY `ShopNo` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `SHOP_IW`
+  MODIFY `SHOP_NO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
