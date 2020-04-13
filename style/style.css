@@ -76,12 +76,11 @@
 
 .form {
     margin: 10px;
-    display: inline;
 }
 
-.input {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.input[type=submit] {
+    padding: 30px;
+    color: green;
 }
 
 .p {

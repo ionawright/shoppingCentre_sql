@@ -22,11 +22,24 @@
             </div>
         </div>
         <div class="left"></div>
-        <div class="middle"></div>
-        <div class="right"></div>
-        <div class="footer">
-            <p>Iona Wright<p>
+        <div class="middle">
+        <h3>Add a new centre with shops:</h3> 
+            <form id="add-centre" method="post" action="addShoppingCentre.php">
+                Name:<input id="centre-name" type="text" />
+                Location:<input id="centre-location" type="text" />
+                <input id="add-centre" type="submit" value="ADD" />
+            </form>
+
+            <h3>Add a new shop :<h3>
+            <form id="add-shop" method="post" action="addShop.php">
+                Name:<input id="shop-name" type="text" label="insert-shop-name" />
+                <input type="submit" value="ADD" />
+            </form>
+            <br />
+            <?php include 'getCentreShop.php';?>
         </div>
+        <div class="right"></div>
+        <div class="footer"><p>Iona Wright<p></div>
     </div>
 
 </body>

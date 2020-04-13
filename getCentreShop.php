@@ -17,15 +17,15 @@
 
     $result = $conn->query($sql);
     $html="";
-
     if ($result = $conn->query($sql)) {
-    } else {
+    }
+    else {
         printf("Query failed: %s\n", $conn->error);
     }
 
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            $html .= '<div style="padding:20px;">' . 'Shop : ' . $row["SHOP_NAME"] . ' / Centre : ' . $row ['CENTRE_NAME'] . '</div>';
+            $html .= '<div style="padding:20px;>' . $row["CENTRE_NAME"] . ':   ' . $row["SHOP_NAME"] . '</div>';
         }
     } else {
         $html .= "0 results";

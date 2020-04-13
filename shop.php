@@ -9,7 +9,7 @@
 		<script>
 			function add() {
 				document.getElementById("add-shop").style.visibility="visible";
-	}
+			}
 		</script>
 </head>
 <body>
@@ -25,14 +25,10 @@
                 </ul>
             </div>
         </div>
-        <div class="left">
-					<form id="add-shop" method="post" action="addShop.php">
-						<h3>Name:</h3> 
-						<input id="shop-name" type="text" /><br>
-						<input type="submit" value="add" />
-					</form>
-        </div>
+        <div class="left"></div>
         <div class="middle">
+				<h3>Shops and the centres:</h3>
+					<br/>
 					<?php include 'getshops.php';?>
         </div>
     	<div class="right"></div>
